@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title>风控清算管理平台</title>
+</head>
+
+<body id="body" style="height: 100vh;">
+    <noscript>
+      <strong>We're sorry but accounting-web doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app" style="height:100%"></div>
+    <script src="/scripts/jquery/jquery-3.3.1.min.js"></script>
+    <script src="/scripts/jquery/jquery.signalR.min.js"></script>
+    <script src="/scripts/moment/moment-with-langs.min.js"></script>
+    <script src="/scripts/qcgrid/accounting.min.js"></script>
+    <script src="/scripts/qcgrid/my-ag-grid.min.js"></script>
+    <script src="/scripts/qcgrid/qcgrid.js"></script>
+    <!-- <script src="http://localhost:56085/signalr/hubs"></script> -->
+    <!-- <script src="/scripts/jquery/singalr.js"></script> -->
+    <!-- built files will be auto injected -->
+    <script>
+        Window.wsUrl = 'ws://192.168.125.154:6011';
+        Window.testUrl = 'http://xgbmsoperate01:9233';
+        Window.devApiUrl = 'http://localhost:51362';
+        Window.releaseUrl = 'http://192.168.125.154:9014';
+        Window.devMainUrl = 'http://10.5.0.71:1017';
+        Window.releaseMainUrl = 'http://192.168.125.154:9010';
+        Window.singalrUrl = 'http://localhost:56085/signalr';
+        Window.releaseSingalrUrl = 'http://192.168.125.154:9015/signalr';
+    </script>
+</body>
+
+</html>

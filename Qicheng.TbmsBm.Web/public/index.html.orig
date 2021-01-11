@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+        <title>主数据运维管理平台</title>
+    </head>
+    <body>
+        <noscript>
+            <strong
+                >We're sorry but project-web doesn't work properly without
+                JavaScript enabled. Please enable it to continue.</strong
+            >
+        </noscript>
+        <div id="app"></div>
+        <script src="/scripts/jquery/jquery-3.3.1.slim.min.js"></script>
+        <script src="/scripts/moment/moment-with-langs.min.js"></script>
+        <script src="/scripts/qcgrid/accounting.min.js"></script>
+        <script src="/scripts/qcgrid/my-ag-grid.min.js"></script>
+        <script src="/scripts/qcgrid/qcgrid.js"></script>
+        <!-- built files will be auto injected -->
+        <script type="text/javascript">
+<<<<<<< Updated upstream
+            Window.devApiUrl = 'http://localhost:5000';
+=======
+            Window.devApiUrl = 'http://localhost:5000/api';
+>>>>>>> Stashed changes
+            Window.testUrl = 'http://xgbmsoperate01:9233';
+            Window.releaseUrl = 'http://192.168.125.154:9018';
+        </script>
+        <script type="text/javascript">
+            String.prototype.format = function(args) {
+                if (arguments.length > 0) {
+                    var result = this;
+                    if (arguments.length == 1 && typeof args == 'object') {
+                        for (var key in args) {
+                            var reg = new RegExp('({' + key + '})', 'g');
+                            result = result.replace(reg, args[key]);
+                        }
+                    } else {
+                        for (var i = 0; i < arguments.length; i++) {
+                            if (arguments[i] == undefined) {
+                                return '';
+                            } else {
+                                var reg = new RegExp('({[' + i + ']})', 'g');
+                                result = result.replace(reg, arguments[i]);
+                            }
+                        }
+                    }
+                    return result;
+                } else {
+                    return this;
+                }
+            };
+        </script>
+    </body>
+</html>

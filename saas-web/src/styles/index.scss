@@ -1,0 +1,135 @@
+@import './variables.scss';
+@import './mixin.scss';
+@import './transition.scss';
+@import './element-ui.scss';
+@import './sidebar.scss';
+
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+  margin: 0;
+}
+
+label {
+  font-weight: 700;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#app{
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  outline: none;
+  text-decoration: none;
+}
+
+div:focus{
+  outline: none;
+ }
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+//main-container全局样式
+.app-container {
+  padding: 20px;
+}
+
+.color-warning {
+    color: #E6A23C;
+}
+
+.color-danger {
+  color: #F56C6C;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+// list 页面header
+.search-header-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.search-header-row > div {
+  padding: 0 5px;
+}
+
+@media (max-width: 1366px) {
+  .search-header-row > div {
+    padding: 0;
+  } 
+}
+
+.search-margin-bottom {
+    margin-bottom: 20px;
+}
+
+.full-width {
+  .el-select, .el-input, .el-date-editor, .el-input-number {
+    width: 100%;
+  }
+}
+
+// 操作列-启用/停用按钮
+.operation-btn {
+  font-size: 18px;
+}
+
+.operation-enable-btn {
+  color: #67c23a;
+}
+
+.operation-disable-btn {
+  color: #f56c6c;
+}
+
+.operation-view-btn {
+  color: #9ea7bb;
+}

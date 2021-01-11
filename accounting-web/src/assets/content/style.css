@@ -1,0 +1,60 @@
+.margin-bottom-10 {
+    margin-bottom: 10px;
+}
+
+.ivu-date-picker {
+    min-width: 100%;
+}
+
+.margin-right-3 {
+    margin-right: 3px;
+}
+
+.ivu-form-item {
+    margin-bottom: 0!important;
+}
+.ivu-menu-horizontal.ivu-menu-light:after{
+    height: 0;
+}
+.ivu-modal-body {
+    max-height: 65vh;
+    overflow-y: auto;
+}
+/*修改报错信息的出现位置*/
+
+.ivu-form-item-error-tip {
+    top: 35%;
+    left: auto;
+    right: 30px;
+    padding-top: 0px;
+    pointer-events: none;
+    z-index: 9;
+}
+
+.ivu-message {
+    top: 50px!important;
+}
+
+.text-danger {
+    color: red;
+}
+
+.ivu-table .null-value-warning {
+    background-color: #FFA500;
+    color: #fff;
+}
+.ivu-table-body .ivu-table-cell{
+    text-align: left;
+}
+.ivu-table-body .ivu-table-cell-with-selection{
+    text-align: center;
+}
+.ivu-table-wrapper, .ivu-table-body, .ivu-table-fixed-body{
+    transition: all .3s linear;
+  }
+/* .ag-theme-balham{
+   transition: all .3s linear;
+} */
+.pull-right{
+    float: right;
+}
